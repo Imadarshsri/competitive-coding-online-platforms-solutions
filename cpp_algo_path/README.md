@@ -9,8 +9,8 @@ Proxy Sites[1](https://codeforcesladders.firebaseapp.com/)  [2](https://earthsha
 - [ ] 3. 
     - [x]    a. linear search 
     - [ ]    b. circular array  (Some problems should be solved using DP, Kadane's Algo) [Try these problems later](https://www.geeksforgeeks.org/circular-array/)
-- [ ] 4. pallindrome, perfect, armstrong basic number problems  
-- [ ] 5. simple hashing  
+- [x] 4. pallindrome, perfect, armstrong basic number problems  
+- [x] 5. simple hashing  
 - [ ] 6. prefix sum problems both 1d and 2d  
 - [ ] 7. sliding window  
 - [ ] 8. Binary search  
