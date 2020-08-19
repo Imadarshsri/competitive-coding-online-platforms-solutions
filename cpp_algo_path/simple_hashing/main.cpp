@@ -16,6 +16,9 @@ int main(){
    cout<<str2<<" : "<<ht->search(str2.c_str())<<"\n";
    cout<<str3<<" : "<<ht->search(str3.c_str())<<"\n";
 
+
+   // This section is buggy
+
    // ht->deleteKeyValue(str1.c_str());
    // cout<<"Elements in ht : " <<ht->count<<"\n";
    // ht->deleteKeyValue(str2.c_str());
