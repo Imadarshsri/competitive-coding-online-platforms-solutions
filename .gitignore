@@ -1,3 +1,30 @@
-.vscode/
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
 *.exe
+*.o
+*.i
+*.s
+*.so
 *.out
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs generated files #
+########################
+.vscode
+.vs
+.idea
+
+# User Defined files and Folders #
+##################################
+build
