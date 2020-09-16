@@ -1,3 +1,3 @@
-# competitive-coding-online-platforms-solutions
+# Coding in C++
 
-Repo of the solution of competitive coding on different platforms
+Repository consisting different Competitive Questions of different platforms, C++ path to be followed, Topics to read and DSA codes
