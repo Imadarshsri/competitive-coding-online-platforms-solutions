@@ -1,10 +1,8 @@
 #if !defined(HAMMING_H)
 #define HAMMING_H
-
+#include <string>
 namespace hamming {
-  // int compute(char *a, char* b) {
-     // std::cout<<a<<" x = x "<<b;
-  // }
+  int compute(std::string strandA,std::string strandB);
 }  // namespace hamming
 
 #endif // HAMMING_H
