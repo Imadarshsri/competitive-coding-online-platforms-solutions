@@ -38,3 +38,11 @@ The behavior of this function template is equivalent to:
 ### `domain_error`
 
 Defines a type of object to be thrown as exception. It may be used by the implementation to report domain errors, that is, situations where the inputs are outside of the domain on which an operation is defined
+
+## Important Topics
+
+### Classes
+
+1. Constructors (Use of [`braces {}`](https://www.cplusplus.com/reference/initializer_list/initializer_list/) vs `parenthesis ()` for constructors for initializations)
+2. _Benefits of using an `inline Constructor/Member Function` vs `Normal (non-inline) Constructor/ Member Function`_
+3. Member Intialization
