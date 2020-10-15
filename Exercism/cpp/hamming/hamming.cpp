@@ -3,7 +3,7 @@
 #include <string> 
 using namespace std;
 namespace hamming {
-  std::string::size_type compute(const string strandA, const string strandB){
+  std::string::size_type compute(const std::string& strandA, const std::string& strandB){
     std::string::size_type diff = 0;
     std::string::size_type n = strandA.length(), m = strandB.length();
 

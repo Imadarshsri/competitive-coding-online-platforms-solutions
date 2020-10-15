@@ -10,7 +10,7 @@ namespace anagram {
     std::vector <std::string> anagram::matches(const std::vector <std::string>& list){
       std::map<char,int> keyCount;
       std::vector <std::string> ans;
-      //Converting key to lowercase and storng in str2
+      //Converting key to lowercase and storing in str2
       std::string str2 = "";
       for(auto c : key) str2 += std::tolower(c);
       
