@@ -13,7 +13,7 @@ Proxy Sites[1](https://codeforcesladders.firebaseapp.com/)  [2](https://earthsha
 - [x] 5. simple hashing  
 - [x] 6. prefix sum problems both 1d and 2d  **(Try to complete tasks problems for revising and practising [Tasks.md](./prefix_sum/Tasks.md))**
 - [ ] 7. sliding window  
-- [ ] 8. Binary search  
+- [x] 8. Binary search  
 - [ ] 9. gcd of two numbers in log n (euclidean and extended euclidean algorithm)  
 - [ ] 10. linear diphantine equation  
 - [ ] 11. checking primes in sqrt(n) complexity  
