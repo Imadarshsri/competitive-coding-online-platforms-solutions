@@ -39,6 +39,8 @@ The behavior of this function template is equivalent to:
 
 Defines a type of object to be thrown as exception. It may be used by the implementation to report domain errors, that is, situations where the inputs are outside of the domain on which an operation is defined
 
+### [hidden **`this`** pointer](https://www.learncpp.com/cpp-tutorial/8-8-the-hidden-this-pointer/)
+
 ## Important Topics
 
 ### Classes
