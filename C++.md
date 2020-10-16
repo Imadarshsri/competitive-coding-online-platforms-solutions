@@ -1,13 +1,13 @@
 # Topics
 
-## Index
+## Table of content
 
-- [Move Semantics in C++]()
-- [hidden `this` pointer]()
-- [inner_product and domain_error]()
-- [classes]()
-- [Typecasting]()
-- [C Traps and Pitfalls]()
+- [Move Semantics in C++](https://github.com/Imadarshsri/competitive-coding-online-platforms-solutions/blob/master/C%2B%2B.md#move-semantics)
+- [hidden `this` pointer](https://github.com/Imadarshsri/competitive-coding-online-platforms-solutions/blob/master/C%2B%2B.md#hidden-this-pointer)
+- [inner_product and domain_error](https://github.com/Imadarshsri/competitive-coding-online-platforms-solutions/blob/master/C%2B%2B.md#inner_product-and-domain_error)
+- [Namespaces and Pragma Once](https://github.com/Imadarshsri/competitive-coding-online-platforms-solutions/blob/master/C%2B%2B.md#namespaces-and-pragma-once)
+- [Typecasting in C++ and C Traps and Pitfalls](https://github.com/Imadarshsri/competitive-coding-online-platforms-solutions/blob/master/C%2B%2B.md#typecasting-in-c-and-c-traps-and-pitfalls)
+- [classes](https://github.com/Imadarshsri/competitive-coding-online-platforms-solutions/blob/master/C%2B%2B.md#classes)
 
 Reference : <https://en.cppreference.com/w/>
 Online Compiler/IDE for C++ : <http://cpp.sh/>
@@ -48,17 +48,15 @@ The behavior of this function template is equivalent to:
 
 Defines a type of object to be thrown as exception. It may be used by the implementation to report domain errors, that is, situations where the inputs are outside of the domain on which an operation is defined
 
-### **[hidden `this` pointer](https://www.learncpp.com/cpp-tutorial/8-8-the-hidden-this-pointer/)**
+## **[hidden `this` pointer](https://www.learncpp.com/cpp-tutorial/8-8-the-hidden-this-pointer/)**
 
-## Important Topics
-
-### Classes
+## Classes
 
 1. Constructors (Use of [`braces {}`](https://www.cplusplus.com/reference/initializer_list/initializer_list/) vs `parenthesis ()` for constructors for initializations)
 2. _Benefits of using an `inline Constructor/Member Function` vs `Normal (non-inline) Constructor/ Member Function`_
 3. Member Intialization
 
-### **Move Semantics**
+## **Move Semantics**
 
 The best resource for understanding move semantics is a book: [Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491908419/) by Scott Meyers.
 You might also like the two conference talks: At CppCon 2019 Klaus Iglberger gave a long talk titled "Back to Basics: Move Semantics" ([part 1](https://youtu.be/St0MNEU5b0o), [part 2](https://youtu.be/pIzaZbKUw2s)). At CppCon 2020 David Olsen gave a slightly shorter talk titled [Back to Basics: Move Semantics](https://youtu.be/ZG59Bqo7qX4).
