@@ -2,12 +2,12 @@
 
 ## Index
 
-- [Move Semantics in C++]
-- [hidden `this` pointer]
-- [inner_product and domain_error]
-- [classes]
-- [Typecasting]
-- [C Traps and Pitfalls]
+- [Move Semantics in C++]()
+- [hidden `this` pointer]()
+- [inner_product and domain_error]()
+- [classes]()
+- [Typecasting]()
+- [C Traps and Pitfalls]()
 
 Reference : <https://en.cppreference.com/w/>
 Online Compiler/IDE for C++ : <http://cpp.sh/>
@@ -59,8 +59,6 @@ Defines a type of object to be thrown as exception. It may be used by the implem
 3. Member Intialization
 
 ### **Move Semantics**
-
-Sorry for the long delay.
 
 The best resource for understanding move semantics is a book: [Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491908419/) by Scott Meyers.
 You might also like the two conference talks: At CppCon 2019 Klaus Iglberger gave a long talk titled "Back to Basics: Move Semantics" ([part 1](https://youtu.be/St0MNEU5b0o), [part 2](https://youtu.be/pIzaZbKUw2s)). At CppCon 2020 David Olsen gave a slightly shorter talk titled [Back to Basics: Move Semantics](https://youtu.be/ZG59Bqo7qX4).
