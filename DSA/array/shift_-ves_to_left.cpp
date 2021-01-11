@@ -1,5 +1,5 @@
 #include<iostream>
-#include<bits/stdc++.h>
+#include<vector>
 
 using namespace std;
 //Macros
@@ -14,25 +14,23 @@ using namespace std;
 typedef uint64_t ui;
 
 void solve(){
-  string s;
-  cin >> s;
-  map <char, int> m;
-  int len = s.length();
-  if(len < 2) return 0;
-
-  for(int i = 0; i < len; i++) m[s[i]]++;
-
-  if(m.size() == len) return len - 2;
-
-  else if(m.size() ){
-
+  vector<int> v;
+  int n = 0;
+  cin>>n;
+  int l = -1;
+  for(int i = 0; i < n; i++){
+    cin>>v[i];
   }
-  else{
-    int ans = 0;
-    for(auto x : m) {
-      ans = max(ans, len - x);
+  for(int i = 0; i < n; i++){
+    if(v[i] < 0){
+      l++;
+      swap(v[i],v[l]);
     }
   }
+  for(int i = 0; i < n; i++){
+    cout<<v[i]<<" ";
+  }
+  cout<<endl;
 }
 
 int main(){

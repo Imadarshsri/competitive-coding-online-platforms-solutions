@@ -1,5 +1,6 @@
 #include<iostream>
-#include<bits/stdc++.h>
+#include<vector>
+#include<unordered_map>
 
 using namespace std;
 //Macros
@@ -14,32 +15,20 @@ using namespace std;
 typedef uint64_t ui;
 
 void solve(){
-  string s;
-  cin >> s;
-  map <char, int> m;
-  int len = s.length();
-  if(len < 2) return 0;
-
-  for(int i = 0; i < len; i++) m[s[i]]++;
-
-  if(m.size() == len) return len - 2;
-
-  else if(m.size() ){
-
+  int n, m, x = 0;
+  cin >> n>> m;
+  unordered_map<int,int> hash;
+  for(int i = 0; i < n+m; i++){
+      cin>>x;
+      hash[x]++;
   }
-  else{
-    int ans = 0;
-    for(auto x : m) {
-      ans = max(ans, len - x);
-    }
-  }
+  cout<<hash.size()<<endl;
 }
 
 int main(){
   //fastio
 
   int cases=1;
-  //fastscan(cases);
   scanf("%d",&cases);
   while(cases--){
     solve();
