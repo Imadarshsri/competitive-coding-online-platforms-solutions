@@ -1,123 +1,263 @@
-# Sequence for learning algorithms
+# SDE 180
 
-## [Follow A20J_Ladders](https://www.a2oj.com/Ladders.html)
+## Day1: (Arrays)
 
-Proxy Sites[1](https://codeforcesladders.firebaseapp.com/)  [2](https://earthshakira.github.io/a2oj-clientside/server/Ladder11.html)
+- [x] [Sort an array of 0’s 1’s 2’s without using extra space or sorting algo](https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2 "Problem link in description")
+- [x] [Repeat and Missing Number](https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3 "Problem link in description")
+- [x] [Merge two sorted Arrays without extra space](https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4 "Problem link in description")
+- [x] [Kadane’s Algorithm](https://www.youtube.com/watch?v=w_KEocd__20&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=5)
+- [x] [Merge Overlapping Subintervals](https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6)
+- [x] [Find the duplicate in an array of N+1 integers. (Ignore the video quality, as this was the first video which i recorded)](https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1)
 
-- [x] 1. Pattern printing  
-- [x] 2. complexity analysis  
-- [ ] 3.
-  - [x]    a. linear search  
-  - [ ]    b. circular array  (Some problems should be solved using DP, Kadane's Algo) [Try these problems later](https://www.geeksforgeeks.org/circular-array/)
-- [x] 4. pallindrome, perfect, armstrong basic number problems  
-- [x] 5. simple hashing  
-- [x] 6. prefix sum problems both 1d and 2d  **(Try to complete tasks problems for revising and practising [Tasks.md](./prefix_sum/Tasks.md))**
-- [ ] 7. sliding window  
-- [x] 8. Binary search  
-- [ ] 9. gcd of two numbers in log n (euclidean and extended euclidean algorithm)  
-- [ ] 10. linear diphantine equation  
-- [ ] 11. checking primes in sqrt(n) complexity  
-- [ ] 12. sieve of eratosthenes  
-- [ ] 13. segmented sieve  
-- [ ] 14. finding the prime factorisation of a number in log n per query  
-- [ ] 15. Euler totient function  
-- [ ] 16. Fermat little theorem  
-- [ ] 17. wilson theorem (follow hacker earth for this phase)  
-    // tougher version of number theory  
-- [ ] 18. finding x^n in log n  
-- [ ] 19. modular arithmetic  
-- [ ] 20. modular inverse of a number  
-- [ ] 21. modular exponentiation  
-- [ ] 22. chinese remainder theorem  
-- [ ] 23. factorial modulo mod  
-- [ ] 24. finding nCr and nPr for queries in constant time  
-- [ ] 25. inclusion exclusion principle  
-    // follow hacker earth/code forces for combinatorics problem  
-- [ ] 26. basic sorting algorithms  
-- [ ] 27. do problems which are constructive and have swapping terms in it  
-- [ ] 28. solve problems realted to 2-pointer approach  
-- [ ] 29. Bit manipulation (hacker earth)  
-- [ ] 30. power set of a given array or a string using BIT  
-- [ ] 31. Number of subarrays with XOR as zero(not an algorithm, but a must do problem)  
-- [ ] 32. Greedy algorithms  
-- [ ] 33. Kadane's algorithm and problems related to them  
-- [ ] 34. Job sequencing and activity selection problem (solve codeforces)  
-- [ ] 35. start basic recursion like fibonacci  
-- [ ] 36. implement binary search  
-- [ ] 37. implement modular exponentiation  
-- [ ] 38. solve recursion problems like finding subset with given sum and others to get a strong grip  
-- [ ] 39. learn merge sort and quick sort  
-- [ ] 40. solve problems related to merge sort (count inversion using merge sort)  
-- [ ] 41. do backtracking problems like sudoku and n queen, it will help wiht dp path problems  
-- [ ] 42. once done with recursion do meet in the middle algorithms and problems  
-- [ ] 43. divide and conquer problems (codeforces only)  
-- [ ] 44. next greater element/next smaller element using stack  
-- [ ] 45. problems related to paranthesis  
-- [ ] 46. largest rectangular area in histogram(concept used in a lot of problems)  
-- [ ] 47. problems related to heap(priority queue)  
-    // starts the hard part  
-- [ ] 48. learn about hashing on string and solve problems, understand when collision happens(cpalgorithms)  
-- [ ] 49. Rabin karp algorithm(cp algorithms)  
-- [ ] 50. prefix function  
-- [ ] 51. KMP algorithm  
-- [ ] 52. z-function  
-- [ ] 53. manachers' algorithm  
-- [ ] 54. Once done do 25-30 problems in these topics  
-- [ ] 55. Tree/graph representation using adjacency matrix or adjacency vector  
-- [ ] 56. DFS/BFS traversal in Graph/Tree  
-- [ ] 57. Diameter of tree  
-- [ ] 58. Euler tour of tree  
-- [ ] 59. finding LCA using euler tour ///// getting answer in good complexity needs segment tree for this  
-- [ ] 60. ///////learn segment tree  
-- [ ] 61. Finding LCA using Binary lifting(takes logarithmic time per query)  
-- [ ] 62. Distance between two nodes  
-- [ ] 63. subtree problems  
-- [ ] 64. again do 25 to 30 questions on spoj and codeforces(D or E on code forces)  
-- [ ] 65. Connected components  
-- [ ] 66. topological sort  
-- [ ] 67. cycle detection in graph  
-- [ ] 68. bipartite check in graph  
-- [ ] 69. SCC(shortest connected components) using kosaraju's algorithm  
-- [ ] 70. Dijkstra's algorithm  
-- [ ] 71. Bellman ford algorithm (because dijkstra fails for negetave edges)  
-- [ ] 72. Floyd Warshall Algorithm  
-- [ ] 73. Do 30 - 40 questions on spoj, codeforces, hacker earth  
-- [ ] 74. Bridges in graph  
-- [ ] 75. Articulation point in graph  
-- [ ] 76. Minimum spanning tree using kruskal's algorithm  
-- [ ] 77. Prim's algorithm  
-- [ ] 78. 0/1 BFS (Dijkstra takes nlogn but this takes linear time)(cpalgorithms)  
-- [ ] 79. Finding bridges online  
-- [ ] 80. Do 20 - 40 problems  
-    //when starting with dp, don't go with iterative dp start with recursion and then try to memoize solutions  
-- [ ] 81. get strong in recursion before starting with dp  
-- [ ] 82. understand what is memoization  
-- [ ] 83. Initially solve all the common existing dp problems like LCS, Knapsack, etc  
-- [ ] 84. Solve the atcoder educational contest ondynamic programming(26 problems) solve all in order  
-- [ ] 85. solve dp problems from different platforms(specifically SPOJ) (then go for codeforces)  
-- [ ] 86. understand how to write recurrence for digit DP(codeforces blog)  
-- [ ] 87. Solve a bunch of problems on it  
-- [ ] 88. read about dp with bitmasks and solve problems  
-- [ ] 89. dp on tree(rachit jain)  
-- [ ] 90. SOS DP  
-- [ ] 91. Solve a lot of dp problems  
-- [ ] 92. Sisjoint Set(using all optimisation)  
-- [ ] 93. offline queries using disjoint set(colorful array on spoj)  
-- [ ] 94. Kruskal's algorithm using disjoint solve problems  
-- [ ] 95. sparse table(not important)  
-- [ ] 96. Fenwick tree (read about range update trick also)  
-- [ ] 97. binary lifting on fenwick tree  
-- [ ] 98. problems on fenwick tree  
-- [ ] 99. matrix exponentiation(problems)  
-- [ ] 100. sqrt decomposition(used where segemnt tree is hard to implement)  
-- [ ] 101. update and query operations in sqrt decomposition  
-- [ ] 102. Mo's Algorithm (problem powerful array)  
-- [ ] 103. Mo's algorithm on trees  
-- [ ] 104. segement tree(range queries and point updates)  
-- [ ] 105. lazy propation on segemnt trees  
-    //studies till now sincerely then you can solve upto E in codeforces from here on they are like last problems in codechef long challenge os..  
-- [ ] 106. Sprague-grundy theorem(gaurav sen)  
-- [ ] 107. flows and related problems  
-- [ ] 108. Heavy light decomposition(Anu deep from google)  
-- [ ] 109. convex hull algorithm  
-- [ ] 110. FFT/NTT  
+## Day2: (Arrays)
+
+- [ ] [Set Matrix Zeros](https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7)
+- [ ] [Pascal Triangle](https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8)
+
+- [-] [Next Permutation](https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9)
+- [ ] [Inversion of Array (Using Merge Sort)](https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10)
+- [x] [Stock Buy and Sell](https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11)
+- [ ] [Rotate Matrix](https://www.youtube.com/watch?v=Y72QeX0Efxw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12)
+
+## Day3: (Arrays/maths)
+
+- [ ] [Search in a 2D matrix](https://www.youtube.com/watch?v=ZYpYur0znng&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=13)
+- [ ] [Pow(X,n)](https://www.youtube.com/watch?v=l0YC3876qxg&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=14)- [ ] [Majority Element (>N/2 times)](https://www.youtube.com/watch?v=AoX3BPWNnoE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=15)
+- [ ] [Majority Element (>N/3 times)](https://www.youtube.com/watch?v=yDbkQd9t2ig&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=16)
+- [ ] [Grid Unique Paths](https://www.youtube.com/watch?v=t_f0nwwdg5o&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=17)
+- [ ] [Reverse Pairs (Leetcode)](https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=18)
+- [ ] Go through Puzzles from GFG (Search on own)
+
+## Day4: (Hashing)
+
+- [ ] [2 Sum problem](https://www.youtube.com/watch?v=dRUpbt8vHpo&list=PLgUwDviBIf0rVwua0kKYlsS_ik_1lyVK_&index=1)
+- [ ] [4 Sum problem](https://www.youtube.com/watch?v=4ggF3tXIAp0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=20)
+- [ ] [Longest Consecutive Sequence](https://www.youtube.com/watch?v=qgizvmgeyUM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=21)
+- [ ] [Largest Subarray with 0 sum](https://www.youtube.com/watch?v=xmguZ6GbatA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=22)
+- [ ] [Count number of subarrays with given XOR(this clears a lot of problems)](https://www.youtube.com/watch?v=lO9R5CaGRPY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=23)
+- [ ] [Longest substring without repeat](https://www.youtube.com/watch?v=qtVh-XEpsJo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=25)
+
+## Day5: (LinkedList)
+
+- [ ] [Reverse a LinkedList](https://www.youtube.com/watch?v=iRtLEoL-r-g&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=26)
+- [ ] [Find middle of LinkedList](https://www.youtube.com/watch?v=sGdwSH8RK-o&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=27)
+- [ ] [Merge two sorted Linked List](https://www.youtube.com/watch?v=Xb4slcp1U38&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=28)
+- [ ] [Remove N-th node from back of LinkedList](https://www.youtube.com/watch?v=Lhu3MsXZy-Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=29)
+- [ ] [Delete a given Node when a node is given. (0(1) solution)](https://www.youtube.com/watch?v=icnp4FJdZ_c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=30)
+- [ ] [Add two numbers as LinkedList](https://www.youtube.com/watch?v=LBVsXSMOIk4&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=31)
+
+## Day6: (LinkedList)
+
+- [ ] [Find intersection point of Y LinkedList](https://www.youtube.com/watch?v=u4FWXfgS8jw&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32)
+- [ ] [Detect a cycle in Linked List](https://www.youtube.com/watch?v=354J83hX7RI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=33)
+- [ ] [Reverse a LinkedList in groups of size k.](https://www.youtube.com/watch?v=Of0HPkk3JgI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=33)
+- [ ] [Check if a LinkedList is palindrome or not.](https://www.youtube.com/watch?v=-DtNInqFUXs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=35)
+- [ ] [Find the starting point of the Loop of LinkedList](https://www.youtube.com/watch?v=QfbOhn0WZ88&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=36)
+- [ ] [Flattening of a LinkedList](https://www.youtube.com/watch?v=ysytSSXpAI0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=37)
+- [ ] [Rotate a LinkedList](https://www.youtube.com/watch?v=9VPm6nEbVPA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=38)
+
+## Day7: (2-pointer)
+
+- [ ] [Clone a Linked List with random and next pointer](https://www.youtube.com/watch?v=VNf6VynfpdM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=39)
+- [ ] [3 sum](https://www.youtube.com/watch?v=onLoX6Nhvmg&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=40)
+- [ ] [Trapping rainwater](https://www.youtube.com/watch?v=m18Hntz4go8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=41)
+- [ ] [Remove Duplicate from Sorted array](https://www.youtube.com/watch?v=Fm_p9lJ4Z_8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=42)
+- [ ] [Max consecutive ones](https://www.youtube.com/watch?v=Mo33MjjMlyA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=43)
+
+## Day8: (Greedy)
+
+- [ ] [N meeting in one room](https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=44)
+- [ ] [Minimum number of platforms required for a railway](https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=45)
+- [ ] [Job sequencing Problem](https://www.youtube.com/watch?v=LjPx4wQaRIs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=46)
+- [ ] [Fractional Knapsack Problem](https://www.youtube.com/watch?v=F_DDzYnxO14&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=48)
+- [ ] [Greedy algorithm to find minimum number of coins](https://www.youtube.com/watch?v=mVg9CfJvayM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=47)
+- [ ] [Activity Selection (it is same as N meeting in one room)](https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=44)
+
+## Day9: (Recursion)
+
+- [ ] [Combination sum-1](https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49)
+
+- [ ] Combination sum-2
+
+- [ ] Palindrome Partioning
+- [ ] Subset Sum-1
+- [ ] Subset Sum-2
+- [ ] K-th permutation Sequence
+
+## Day10: (Backtracking)
+
+- [ ] N queens Problem
+- [ ] Sudoko
+- [ ] M coloring Problem (Graph prob)
+- [ ] Rat in a Maze
+- [ ] Print all Permutations of a string/array
+- [ ] Word Break (print all ways)
+
+## Day11: (Divide and Conquer)
+
+- [ ] 1/N-th root of an integer (use binary search) (square root, cube root, ..)
+- [ ] Matrix Median
+- [ ] Find the element that appears once in sorted array, and rest element appears twice (Binary search)
+- [ ] Search element in a sorted and rotated array/ find pivot where it is rotated
+- [ ] Median of 2 sorted arrays
+- [ ] K-th element of two sorted arrays
+
+## Day12: (Bits) (Optional, very rare topic in interviews, but if you have time left, someone might ask)
+
+- [ ] Check if a number if a power of 2 or not in O(1)
+- [ ] Count total set bits
+- [ ] Divide Integers without / operator
+- [ ] Power Set (this is very important)
+- [ ] Find MSB in o(1)
+- [ ] Find square of a number without using multiplication or division operators.
+
+## Day13: (Stack and Queue)
+
+- [ ] Implement Stack / Implement Queue
+- [ ] BFS
+- [ ] Implement Stack using Queue
+- [ ] Implement Queue using Stack
+- [ ] Check for balanced parentheses
+- [ ] Next Greater Element
+
+## Day14:
+
+- [ ] Next Smaller Element
+- [ ] LRU cache (vvvv. imp)
+- [ ] Largest rectangle in histogram
+- [ ] Sliding Window maximum
+- [ ] Implement Min Stack
+- [ ] Rotten Orange (Using BFS)
+
+## Day15: (String)
+
+- [ ] Reverse Words in a String
+- [ ] Longest Palindrome in a string
+- [ ] Roman Number to Integer and vice versa
+- [ ] Implement ATOI/STRSTR
+- [ ] Longest Common Prefix
+- [ ] Rabin Karp
+
+## Day16: (String)
+
+- [ ] Prefix Function/Z-Function
+- [ ] KMP algo
+- [ ] Minimum characters needed to be inserted in the beginning to make it palindromic.
+- [ ] Check for Anagrams
+- [ ] Count and Say
+- [ ] Compare version numbers
+
+## Day17: (Binary Tree)
+
+- [ ] Inorder Traversal (with recursion and without recursion)
+- [ ] Preorder Traversal (with recursion and without recursion)
+- [ ] Postorder Traversal (with recursion and without recursion)
+- [ ] LeftView Of Binary Tree
+- [ ] Bottom View of Binary Tree
+- [ ] Top View of Binary Tree
+
+## Day18: (Binary Tree)
+
+- [ ] Level order Traversal / Level order traversal in spiral form
+- [ ] Height of a Binary Tree
+- [ ] Diameter of Binary Tree
+- [ ] Check if Binary tree is height balanced or not
+- [ ] LCA in Binary Tree
+- [ ] Check if two trees are identical or not
+
+## Day 19: (Binary Tree)
+
+- [ ] Maximum path sum
+- [ ] Construct Binary Tree from inorder and preorder
+- [ ] Construct Binary Tree from Inorder and Postorder
+- [ ] Symmetric Binary Tree
+- [ ] Flatten Binary Tree to LinkedList
+- [ ] Check if Binary Tree is mirror of itself or not
+
+## Day 20: (Binary Search Tree)
+
+- [ ] Populate Next Right pointers of Tree
+- [ ] Search given Key in BST
+- [ ] Construct BST from given keys.
+- [ ] Check is a BT is BST or not
+- [ ] Find LCA of two nodes in BST
+- [ ] Find the inorder predecessor/successor of a given Key in BST.
+
+## Day21: (BinarySearchTree)
+
+- [ ] Floor and Ceil in a BST
+- [ ] Find K-th smallest and K-th largest element in BST (2 different Questions)
+- [ ] Find a pair with a given sum in BST
+- [ ] BST iterator
+- [ ] Size of the largest BST in a Binary Tree
+- [ ] Serialize and deserialize Binary Tree
+
+## Day22: (Mixed Questions)
+
+- [ ] Binary Tree to Double Linked List
+- [ ] Find median in a stream of running integers.
+- [ ] K-th largest element in a stream.
+- [ ] Distinct numbers in Window.
+- [ ] K-th largest element in an unsorted array.
+- [ ] Flood-fill Algorithm
+
+## Day23: (Graph)
+
+- [ ] Clone a graph (Not that easy as it looks)
+- [ ] DFS
+- [ ] BFS
+- [ ] Detect A cycle in Undirected Graph/Directed Graph
+- [ ] Topo Sort
+- [ ] Number of islands (Do in Grid and Graph both)
+- [ ] Bipartite Check
+
+## Day24: (Graph)
+
+- [ ] SCC(using KosaRaju’s algo)
+- [ ] Djisktra’s Algorithm
+- [ ] Bellman Ford Algo
+- [ ] Floyd Warshall Algorithm
+- [ ] MST using Prim’s Algo
+- [ ] MST using Kruskal’s Algo
+
+## Day25: (Dynamic Programming)
+
+- [ ] Max Product Subarray
+- [ ] Longest Increasing Subsequence
+- [ ] Longest Common Subsequence
+- [ ] 0-1 Knapsack
+- [ ] Edit Distance
+- [ ] Maximum sum increasing subsequence
+- [ ] Matrix Chain Multiplication
+
+## Day26: (DP)
+
+- [ ] Maximum sum path in matrix, (count paths, and similar type do, also backtrack to find the maximum path)
+- [ ] Coin change
+- [ ] Subset Sum
+- [ ] Rod Cutting
+- [ ] Egg Dropping
+- [ ] Word Break
+- [ ] Palindrome Partitioning (MCM Variation)
+- [ ] Maximum profit in Job scheduling
+
+## Day27: (OS)
+
+- [ ] Revise OS notes that you would have made during your sem
+      If not made notes, spend 2 or 3 ## days and make notes from Knowledge Gate.
+
+## Day28: (DBMS)
+
+- [ ] Revise DBMS notes that you would have made during your semesters.
+      If not made notes, spend 2 or 3 ## days and make notes from Knowledge Gate.
+
+## Day29: (Computer Networks)
+
+- [ ] Revise CN notes, that you would have made during your sem.
+      If not made notes, spend 2 or 3 ## days and make notes from Knowledge Gate.
+
+## Day30: (Projects)
+
+- [ ] Make a note of how will your represent your projects, and prepare all questions related to tech which you have used in your projects. Prepare a note which you can say for 3-10 minutes when he asks you that say something about the project.
+
+### Hurrah!! You are ready for your placement after a month of hard-work without a cheat day
