@@ -1,9 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
- // } Driver Code Ends
-
+/// Problem: https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0
 
 // Function to find subarray with maximum sum
 // arr: input array
@@ -42,8 +40,6 @@ int maxSubarraySum(int a[], int n){ //similar to kadane's algo
     return gsum;
 }
 
-// { Driver Code Starts.
-
 int main()
 {
     int t,n;
@@ -62,4 +58,3 @@ int main()
         cout << maxSubarraySum(a, n) << endl;
     }
 }
-  // } Driver Code Ends

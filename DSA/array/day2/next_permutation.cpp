@@ -8,15 +8,14 @@
 #include<set>
 
 using namespace std;
+
+// Problem link: https://leetcode.com/problems/next-permutation/
+// Solution: https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9
+
 //Macros
 #define endl "\n"
 #define fn(x,n) for(; x < n; x++)
 #define fo(n) for(auto i = 0; i < n; i++)
-#define debug(x) cout<< #x << " = " << (x) << "\n"
-#define readSeq(v, n) for(int i = 0; i < n; i++) cin>>v[i];
-#define fastio ios_base::sync_with_stdio(false);cin.tie(NULL);
-#define look(v) cout<< #v << " : "; for(auto x : v) cout<< x << " "; cout<< endl
-
 typedef uint64_t ui;
 
 void nextPermutation(vector<int>& nums) {

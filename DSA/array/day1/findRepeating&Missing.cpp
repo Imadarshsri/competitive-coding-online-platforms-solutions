@@ -1,8 +1,11 @@
 #include <iostream>
 #include <set>
 #include <algorithm>
-
 using namespace std;
+
+/// Problem: https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/
+/// Solution: https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3
+
 
 int *findTwoElement(int *arr, int n) {
     set<int> s;

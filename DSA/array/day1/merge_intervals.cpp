@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+/// Problem: https://leetcode.com/problems/merge-intervals/
+/// Solution: https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6
 
 class Solution {
 public:

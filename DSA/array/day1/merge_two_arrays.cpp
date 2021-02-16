@@ -1,27 +1,17 @@
 // Merge two sorted array w/o using extraspace
 
-#include <bits/stdc++.h>
-// #include <vector>
+// Problem link: https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1
+// Solution: https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4
 
+#include <bits/stdc++.h>
 using namespace std;
+
 //Macros
 #define endl "\n"
 #define fn(x, n) for (; x < n; x++)
 #define fo(n) for (auto i = 0; i < n; i++)
-#define debug(x) cout << #x << " = " << (x) << "\n"
-#define readSeq(v, n)         \
-  for (int i = 0; i < n; i++) \
-    cin >> v[i];
-#define fastio                      \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);
-#define look(v)        \
-  cout << #v << " : "; \
-  for (auto x : v)     \
-    cout << x << " ";  \
-  cout << endl
-
 typedef uint64_t ui;
+
 void merge(vector<int>& a, vector<int>& b, int n, int m) {
     /*Insertion Sort O(n*m) */
     //int i = 0, j = 0;
