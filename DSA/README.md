@@ -3,19 +3,18 @@
 ## Day1: (Arrays)
 
 - [x] [Sort an array of 0’s 1’s 2’s without using extra space or sorting algo](https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2 "Problem link in description")
-- [x] [Repeat and Missing Number](https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3 "Problem link in description")
+- [-] [Repeat and Missing Number](https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3 "Problem link in description")
 - [x] [Merge two sorted Arrays without extra space](https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4 "Problem link in description")
 - [x] [Kadane’s Algorithm](https://www.youtube.com/watch?v=w_KEocd__20&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=5)
-- [x] [Merge Overlapping Subintervals](https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6)
+- [-] [Merge Overlapping Subintervals](https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6)
 - [x] [Find the duplicate in an array of N+1 integers. (Ignore the video quality, as this was the first video which i recorded)](https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=1)
 
 ## Day2: (Arrays)
 
-- [ ] [[Set Matrix Zeros](https://www.youtube.com/watch?v=M65xBewcqcI&]()list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7)
-- [ ] [Pascal Triangle](https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8)
-
+- [x] [Set Matrix Zeros](https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7)
+- [x] [Pascal Triangle](https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8)
 - [-] [Next Permutation](https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9)
-- [ ] [Inversion of Array (Using Merge Sort)](https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10)
+- [x] [Inversion of Array (Using Merge Sort)](https://www.youtube.com/watch?v=kQ1mJlwW-c0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=10)
 - [x] [Stock Buy and Sell](https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11)
 - [ ] [Rotate Matrix](https://www.youtube.com/watch?v=Y72QeX0Efxw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=12)
 
