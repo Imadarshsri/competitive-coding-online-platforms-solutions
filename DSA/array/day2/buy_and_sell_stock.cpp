@@ -4,7 +4,7 @@ using namespace std;
 
 // Problem link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 // Solution: https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11
-
+// Concepts: Intution
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {

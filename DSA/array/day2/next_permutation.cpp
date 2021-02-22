@@ -1,7 +1,3 @@
-/// Find the next lexicographical permutation of given array
-// If it does not exist return the lowest possible permutation(i.e. sorted array)
-
-
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -9,6 +5,8 @@
 
 using namespace std;
 
+/// Find the next lexicographical permutation of given array
+// If it does not exist return the lowest possible permutation(i.e. sorted array)
 // Problem link: https://leetcode.com/problems/next-permutation/
 // Solution: https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9
 

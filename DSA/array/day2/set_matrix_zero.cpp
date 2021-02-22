@@ -5,7 +5,8 @@ using namespace std;
 ///Problem Statement: https://leetcode.com/problems/set-matrix-zeroes/
 ///Solution: https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7
 /// Concetps: 0) Naive : T(n): O(3mn), S(n): O(m+n)
-///           1) Using matrix itself for marking flags of rows and cols: T(n): O(2mn + m + n), S(n): O(1)
+//            1) Better: Using dummy arrays for setting rows and cols flags of cells with zero value
+///           2) Optimal: Using matrix itself for marking flags of rows and cols: T(n): O(2mn + m + n), S(n): O(1)
 
 //Macros
 #define endl "\n"
