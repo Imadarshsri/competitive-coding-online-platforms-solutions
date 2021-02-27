@@ -17,15 +17,29 @@ typedef uint64_t ui;
 //Your solution class
 class Solution {
 public:
-  double myPow(double x, int n) {
+  // double myPow(double x, int n) {
+  //   if(n==0)
+  //       return 1;
+  //   double ans=myPow(x,n/2);
+    
+  //   if(n%2)
+  //       return n<0? (1/x)*ans*ans:x*ans*ans; 
+  //   else
+  //       return ans*ans;       
+  // }  
+    double myPow(double x, int n) {
+    
     if(n==0)
         return 1;
-    double ans=myPow(x,n/2);
-    
-    if(n%2)
-        return n<0? (1/x)*ans*ans:x*ans*ans; 
-    else
-        return ans*ans;       
+    double ans=1;
+    long long nn = n;
+    if(n < 0) nn *= -1;
+    while(nn > 0){
+      if(nn & 1) ans*=x;
+      x = x*x;
+      nn = nn>>1;
+    }  
+    (n < 0) ? 1/ans: ans; 
   }
 };
 
