@@ -2,7 +2,7 @@
 using namespace std;
 
 ///Problem Statement: https://leetcode.com/problems/reverse-pairs/
-///Solution: https://youtu.be/S6rsAlj_iB4 , https://leetcode.com/problems/two-sum/solution/
+///Solution: https://youtu.be/S6rsAlj_iB4 , https://leetcode.com/problems/reverse-pairs/solution/
 ///Concepts: 1) Brute Force: O(n^2)
 ///[TODO:] 2) BST, 3) BIT ?? (Find out)
 // 4)Merge Sort: T(n): O(nlogn + n + n) , S(n): O(n)

@@ -49,6 +49,7 @@ public:
     // }
     
     // 3) Combinatorics: T(N): O(min(n,m)), S(N): O(1)
+    // (n + m - 2)C(n - 1)
     int uniquePaths(int m, int n) {
         double ans = 1, r = 1;
         if(n < m)
