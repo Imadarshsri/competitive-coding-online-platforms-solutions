@@ -29,7 +29,6 @@ public:
 
 
     void deleteMiddleWithSizeGiven(stack<int> &s, int k){
-        showStack(s, "Sort", k);
         if(s.empty()) return; // Base Condtition
 
         int x = s.top();  // Induction
