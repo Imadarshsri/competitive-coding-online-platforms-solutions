@@ -9,6 +9,7 @@
 *.s
 *.so
 *.out
+.*
 # OS generated files #
 ######################
 .DS_Store
