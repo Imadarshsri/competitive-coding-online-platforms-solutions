@@ -3,6 +3,18 @@
 #include<vector>
 using namespace std;
 
+/*
+Problems based on this pattern:
+
+1. [Subset_sum](./subset_sum.cpp)
+2. Equal Sum partition
+3. Count of subset with given sum
+4. Min. Subset Sum diff.
+5. Count of number of subsets with given difference
+! 6. Target Sum ???
+*/
+
+
 ///Problem Statement: 01 Knapsack Problem
 ///Solution: https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
 ///Concepts: 1) Recursion : T(n): ??, S(n) : ??

@@ -2,9 +2,8 @@
 #include<vector>
 using namespace std;
 
-///Problem Statement: https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1
-///Solution: https://www.youtube.com/watch?v=UmMh7xp07kY&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=8
-// https://practice.geeksforgeeks.org/viewSol.php?subId=2760991175c9a56cbdef02da5aa3a67f&pid=704573&user=imadarshsri
+///Problem Statement: Subset Sum Problem https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
+///Solution: https://www.youtube.com/watch?v=_gPcYovP7wc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=7
 ///Concepts: 1) DP: T(N) : O(N*Sum), S(N): O(N*sum)
 
 //Macros
@@ -15,21 +14,21 @@ using namespace std;
 #define look(v) cout<< #v << " : "; for(auto x : v) cout<< x << " "; cout<< endl
 
 typedef uint64_t ui;
-//Your solution class
 class Solution{
+public:
   int subsetSum(int arr[], int n, int sum){
-    bool dp[n+1][sum+1];
+    int dp[n+1][sum+1];
     for(int j = 0; j <= sum; j++)
-        dp[0][j] = false;
+        dp[0][j] = 0;
 
     for(int i = 0; i <= n; i++)
-        dp[i][0] = true;
+        dp[i][0] = 1;
 
 
     for(int i = 1; i <= n; i++){
-      for(int j = 1; j <= sum; j++){
+      for(int j = 1; j <= sum; j++){//! what happens if we start from j = 0
         if(arr[i-1] <= j){
-          dp[i][j] = dp[i - 1][j - arr[i - 1]] || dp[i-1][j];
+          dp[i][j] = dp[i - 1][j - arr[i - 1]] + dp[i-1][j];
         }
         else{
           dp[i][j] = dp[i-1][j];
@@ -38,23 +37,13 @@ class Solution{
     }
 
     for(int i = 0; i <= n; i++){
-      for(int j = 0; j <= sum; j++){ //! what happens if we start from j = 0
+      for(int j = 0; j <= sum; j++){
           cout<<dp[i][j]<<" ";
       }
       cout<<"\n";
     }
 
     return dp[n][sum];
-  }
-
-public:
-  int equalPartition(int N, int arr[]){
-      int sum = 0;
-      for(int i = 0; i < N; i++){
-          sum += arr[i];
-      }
-      if(sum & 1) return 0;
-      return subsetSum(arr, N, sum/2);
   }
 };
 
@@ -66,6 +55,8 @@ int main(){
   for(int i = 0; i <  n; i++){
     cin>>arr[i];
   }
-  cout<<Solution().equalPartition(n, arr);
+  int sum = 0;
+  cin>>sum;
+  cout<<Solution().subsetSum(arr, n, sum);
   return 0;
 }
