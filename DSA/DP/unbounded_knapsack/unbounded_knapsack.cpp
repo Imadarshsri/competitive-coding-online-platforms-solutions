@@ -48,7 +48,6 @@ public:
             for(int j = 1; j <= W; j++) {
                 if(wt[i-1] <= j)
                     dp[j] = max(val[i-1] + dp[j - wt[i-1]], dp[j]);
-
                 // cout<<dp[j]<<" ";
             }
             // cout<<"\n";
