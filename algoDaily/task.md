@@ -19,3 +19,7 @@
 2. Day 1: Array Intersection
 
    - Union and Intersection are the part of `set theory`. Hence, whenever we encounter such questions we should use `set` or `map` for solving these questions.  
+  
+3. Day 2: FizzBuzz
+  
+4. Day 3: Reverse Only Alphabetical
