@@ -1,65 +1,48 @@
 #include<iostream>
 #include<vector>
+#include<climits>
 using namespace std;
 
-///Problem Statement: https://www.geeksforgeeks.org/cutting-a-rod-dp-13/
-///Solution: https://youtu.be/SZqAQLjDsag
+///Problem Statement: https://practice.geeksforgeeks.org/problems/cutted-segments1642/1#
+///Solution: [Problem similar to this] --> https://www.youtube.com/watch?v=I-l6PBeERuc&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=16 
 ///Concepts: DP, Unbounded Knapsack pattern
-///Complexity: T(n): O(L*N), S(n): O(L*N) // N -->  Length of Rod, L-> Size of array of cuts that can be made
+///Complexity: T(n): O(4*N), S(n): O(4*N) // N --> Length of Line Segment
 
 
 class Solution {
-public:    
-    int unboundedKnapSack(int N, int W,  vector<int> &val, vector<int> &wt) {
-        int dp[N+1][W+1];
+public: 
+    int maximizeTheCuts(int n, int x, int y, int z) {
         
-        for(int i = 0; i<=N; i++)
+        vector<int> cutLength = {x,y,z};
+        int dp[4][n + 1];
+        for(int i = 0; i <= 3; i++) {
             dp[i][0] = 0;
-        for(int j = 0; j <= W; j++)
-            dp[0][j] = 0;
-        
-        for(int i = 1; i <= N; i++) {
-            for(int j = 1; j <= W; j++) {
-                if(wt[i-1] <= j)
-                    dp[i][j] = max(val[i-1] + dp[i][j - wt[i-1]], dp[i-1][j]);
+        }
+        for(int j = 1; j <= n; j++) {
+            dp[0][j] = INT_MIN;
+        }
+        for(int i = 1; i <= 3; i++) {
+            for(int j = 1; j <= n; j++) {
+                if(cutLength[i-1] <= j) 
+                    dp[i][j] = max(1 + dp[i][j - cutLength[i - 1]], dp[i-1][j]);
+                    
                 else
                     dp[i][j] = dp[i-1][j];
             }
-        }
-        for(int i = 0; i <= N; i++) {
-            for(int j = 0; j <= W; j++) {
-              cout<<dp[i][j]<<" ";
-            }
-            cout<<"\n";
-        }
-        return dp[N][W];
+        }        
+        if(dp[3][n] <= 0)
+            return 0;
+        
+        return dp[3][n];
     }
-    // N -->  Length of Rod
-    // length --> sizes of cut that rod can cut into 
-    // length.size() --> Size of options array for rod cuts given or no. of options for cuts given
-    // price --> price corresponding to cut sizes
-    // assert(length.size() ==  prices.size())
-    int rodCutting(int N, vector<int> &prices, vector<int> &length) {
-        return unboundedKnapSack(length.size(), N, prices, length);
-    }
-    int maximizeTheCuts(int n, int x, int y, int z) {
-        vector<int> prices(3,1), length = {x,y,z};
-        return rodCutting(n, prices, length);
-    }
+    
 };
-
+// Problem : Given an integer N denoting the Length of a line segment. You need to cut the line segment in such a way that the cut length of a line segment each time is either x , y or z. Here x, y, and z are integers.
+// After performing all the cut operations, your `total number of cut segments must be maximum`.
 int main() {
-  int N = 1, n = 1; // N -> length of Rod, n --> Options of rod cuts array size or no. of options for cutts given
-  scanf("%d %d",&N, &n);
-  vector<int> prices(n), length(n);
-  for(int i = 0; i < n; i++) {
-    cin>>length[i];
-  }
-
-  for(int i = 0; i < n; i++) {
-    cin>>prices[i];
-  }
-
-  cout<< Solution().rodCutting(N, prices, length);
+  int N = 1, x = 1, y = 1, z = 1; 
+  scanf("%d %d %d %d",&N, &x, &y, &z);
+  
+  cout<< Solution().maximizeTheCuts(N, x, y, z);
   return 0;
 }

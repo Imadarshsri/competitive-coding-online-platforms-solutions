@@ -32,7 +32,7 @@ public:
                 dp[1][j] = j/coins[0];
         }
         
-        for(int i = 2; i <= n; i++) {
+        for(int i = 2; i <= n; i++) { /// Why only 2nd row is initialized
             for(int j = 1; j <= sum; j++) {
                 if(coins[i - 1] <= j) {
                     dp[i][j] = min((1 + dp[i][j - coins[i-1]]), dp[i-1][j]);
