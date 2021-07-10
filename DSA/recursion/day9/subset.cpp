@@ -1,11 +1,14 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 ///Problem Statement: https://practice.geeksforgeeks.org/problems/subset-sums2234/1#
 ///Solution: https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=53
 ///Concepts: Recursion, Bactracking
-///Complexity: T(n):  O(2^N), S(n): O(2^N)
+///Complexity: 
+// Brute: T(n):  O(N.2^N) ???, S(n): O(2^N)
+// Optimzed: T(n):  O(2^N), S(n): O(2^N)
 
 class Solution {
 public:
@@ -30,8 +33,7 @@ public:
 int main() {
     int t;
     cin >> t;
-    while (t--)
-    {
+    while (t--) {
         int N;
         cin>>N;
         vector<int> arr(N);
