@@ -19,7 +19,7 @@ https://www.javatpoint.com/matrix-chain-multiplication-algorithm
 class Solution{
 public:
     int dp[102][102];
-
+   // !Bottom Up: Tabulation ???
     // int solveBottomUp(int arr[], int n) {
         
     //     int t[n+1][n+1];
@@ -70,7 +70,7 @@ public:
         }
         return ans;
     }
-   // Memoization (Bottom Up) T(n): O(n^3), S(n): O(n*n)
+   // Memoization (Top Down) T(n): O(n^3), S(n): O(n*n)
     int solveTopDown(int arr[], int i, int j) {
         if(i >= j) 
             return 0;
