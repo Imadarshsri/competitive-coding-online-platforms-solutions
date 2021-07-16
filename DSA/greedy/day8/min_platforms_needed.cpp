@@ -17,7 +17,9 @@ class Solution{
     Lets take the example: arr[ ]:  [100, 80, 70, 60] and dept[ ]: [700, 350, 90, 150]
     In this case, your algo will output 4 but the actual output is 3...
 
-    I thought the same algo but performing dry run on some test cases help me understand what's the problem with this algo....i.e. using this we are not keeping track of arrival time of trains on a time frame....which is impacting our overall result.....As striver mentioned in the video we have to keep track of time or we are traversing the time and checking no. of platforms currently occupied....
+    I thought the same algo but performing dry run on some test cases help me understand what's the problem with this algo....
+    i.e. using this we are not keeping track of arrival time of trains on a time frame....which is impacting our overall result.....
+    As striver mentioned in the video we have to keep track of time or we are traversing the time and checking no. of platforms currently occupied....
     Wrong solution bcze we need to keep track of arrival time also so that we can determine at a instance of time no. of trains standing on platform
     */
 //    int findPlatform(int arr[], int dep[], int n) {
@@ -58,13 +60,13 @@ class Solution{
         }
         return res;
     }
-
+    // striver solution
     int findPlatform(int arr[], int dep[], int n) {
         sort(arr, arr+n);
         sort(dep, dep+n);
         
         int platforms_needed = 1, res = 1;
-        int i = 1, j  =0;
+        int i = 1, j = 0;
         while(i < n && j < n) {
             if(arr[i] <= dep[j]){
                 platforms_needed++;

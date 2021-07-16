@@ -3,38 +3,38 @@
 using namespace std;
 
 ///Problem Statement: https://practice.geeksforgeeks.org/problems/choose-and-swap0531/1#
-///Solution: 
-///Concepts: Strings, Hashing, Greedy ??
+///Solution: https://practice.geeksforgeeks.org/viewSol.php?subId=8ffb3e51ece8e7d04323c4002a53255e&pid=704867&user=imadarshsri
+///Concepts: Strings, Hashing, Greedy
 ///Complexity: T(n): O(26*n), S(n): O(n)
 
 class Solution{
 public:
     string chooseandswap(string a){
-        char f = a[0], l = a[0];
+        char largestAlphabet = a[0], smallestAlphabet = a[0];
         int n = a.length();
         vector<int> vis(n,0);
         for(int i = 0; i < n; i++){
             if(vis[i] != 0) continue;
-            f = a[i], l = f;
+            largestAlphabet = a[i], smallestAlphabet = largestAlphabet;
             vis[i] = 1;
             for(int j = i+1; j < n; j++) {
-                if(vis[j] == 0 && a[j] < l){
-                    l = a[j];
+                if(vis[j] == 0 && a[j] < smallestAlphabet){
+                    smallestAlphabet = a[j];
                 }
                 else if(a[j] == a[i]){
                     vis[j] = 1;
                 }
             }
-            if(l!=f)
+            if(smallestAlphabet!=largestAlphabet)
                 break;
         }
-        if(l != f) 
+        if(smallestAlphabet != largestAlphabet) 
             for(int i = 0; i < n; i++) {
-                if(a[i] == l){
-                    a[i] = f;
+                if(a[i] == smallestAlphabet){
+                    a[i] = largestAlphabet;
                 }
-                else if(a[i] == f) {
-                    a[i] = l;
+                else if(a[i] == largestAlphabet) {
+                    a[i] = smallestAlphabet;
                 }
             }
         
