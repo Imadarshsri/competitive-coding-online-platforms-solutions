@@ -4,12 +4,16 @@ using namespace std;
 ///Problem Statement: https://leetcode.com/problems/permutations
 ///Solution: https://www.youtube.com/watch?v=f2ic2Rsc9pU&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=53
 ///Concepts: Recursion, Bactracking
-///Complexity: T(n):  O(n!), S(n): O(N!.2N)
+
+///SET: T(n):  O(n.n! + 3logn), S(n): O(N! + 2N) // 3logn -> for insert, erase and find in set
+///MAP: T(n):  O(n.n!), S(n): O(N!+ 2N) 
+///Optimal Solution: T(n): O(n.n!), S(n): O(N!) //Intution: We are trying for every no. at particular index
 
 class Solution {
 public:
     vector<vector<int>> ans;
-    void perms(set<int> nums, vector<int> &v) {
+    // using set
+    void permsSet(set<int> nums, vector<int> &v) {
         if(nums.empty()) {
             ans.push_back(v);
         }
@@ -19,7 +23,7 @@ public:
             v.push_back(x);
             nums.erase(i);
             
-            perms(nums, v);
+            permsSet(nums, v);
             
             nums.insert(x);
             v.pop_back();
@@ -27,10 +31,62 @@ public:
             i = nums.find(x);
         }
     }
+     
+     // using map
+        void permsMap(vector<int> &nums, vector<int> &v, vector<int> &m) {
+            if(nums.size() == v.size()) {
+                ans.push_back(v);
+            }
+        int n = nums.size();
+        for(auto i = 0; i < n; i++) {
+            if(m[i] == 0) {
+                v.push_back(nums[i]);
+                m[i] = 1;
+                permsMap(nums, v, m);
+                v.pop_back();
+                m[i] = 0;
+            }        
+        }
+    }    
+    // using concept of next permutation
+    void permsMap(vector<int> &nums, vector<int> &v, vector<int> &m) {
+        if(nums.size() == v.size()) {
+            ans.push_back(v);
+            return;
+        }
+        int n = nums.size();
+        for(auto i = 0; i < n; i++) {
+            if(m[i] == 0) {
+                v.push_back(nums[i]);
+                m[i] = 1;
+                permsMap(nums, v, m);
+                v.pop_back();
+                m[i] = 0;
+            }        
+        }
+    }
+    // using swapping to solve this problem
+    //Intution: We are trying for every no. at particular index
+    void perms(vector<int> &nums, int idx) {
+        int n = nums.size();
+        if(n == idx) {
+            ans.push_back(nums);
+            return;
+        }
+        for(int i = idx; i < n; i++) {
+            swap(nums[i], nums[idx]);
+            perms(nums, idx+1);
+            swap(nums[i], nums[idx]);
+        }
+    }
     vector<vector<int>> permute(vector<int>& nums) {
         set<int> num(nums.begin(), nums.end());
+        int n = nums.size();
+        vector<int> m(n);
         vector<int> v;
-        perms(num, v);
+        permsSet(num, v);
+        permsMap(nums, v, m);
+        perms(nums, 0);
         return ans;
     }
 };
