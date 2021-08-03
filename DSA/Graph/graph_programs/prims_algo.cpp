@@ -75,12 +75,12 @@ int main(){
 	show_MSTEdges();
 	return 0;
 }
-Minimum Spanning Tree Representation through existing path (Prim's Algorithm)::
+// Minimum Spanning Tree Representation through existing path (Prim's Algorithm)::
 
- Path (u <--> v)   |  Minimum Cost
-  u     |    v     |(Between u and v)
----------------------------------------
-  0     |    0     |    0
-  1     |    2     |    3
-  2     |    0     |    1
-  3     |    0     |    2
+//  Path (u <--> v)   |  Minimum Cost
+//   u     |    v     |(Between u and v)
+// ---------------------------------------
+//   0     |    0     |    0
+//   1     |    2     |    3
+//   2     |    0     |    1
+//   3     |    0     |    2
