@@ -13,35 +13,7 @@ struct Node {
    }
 };
 
-// 
-void preorder(Node * root) {
-   if(root == NULL) 
-      return;
-
-   cout << root->val << ", ";
-   preorder(root->left);
-   preorder(root->right);
-}
-
-void inorder(Node * root) {
-   if(root == NULL) 
-      return;
-
-   inorder(root->left);
-   cout << root->val << ", ";
-   inorder(root->right);
-}
-
-void postorder(Node * root) {
-   if(root == NULL) 
-      return;
-
-   postorder(root->left);
-   postorder(root->right);
-   cout << root->val << ", ";
-
-}
-
+//
 Node * buildTreeFromInorderAndPreOrder(vector<int> &inTree, vector<int> &preTree, int &preIdx, int n, int inStartIdx, int inEndIdx, map<int, int> &mp) {
    if(inStartIdx > inEndIdx) 
       return NULL;   
@@ -66,6 +38,13 @@ Node * buildTreeFromInorderAndPreOrder(vector<int> &inTree, vector<int> &preTree
  4  5 6  7
 
 */
+
+// In: 4 2 5 1 6 3 7
+// Pre: 1 2 4 5 3 6 7
+
+
+    1
+   / \
 int main() {
    int n;
    cin>> n;

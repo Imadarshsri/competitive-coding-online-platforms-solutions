@@ -35,7 +35,6 @@ public:
 //         return ans;
 //     }
 
-// ????
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         ListNode *p = headA, *q = headB;
         while(p != q){
