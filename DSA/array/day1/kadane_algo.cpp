@@ -5,16 +5,15 @@ using namespace std;
 // Function to find subarray with maximum sum
 // arr: input array
 // n: size of array
-int maxSubarraySum(vector<int> &a, int n){
-    int l = 0, s = INT_MIN;
-    for(int i = 0; i < n; i++){
-        s = max(s, l);
-        l += a[i];
-        
-        if(l < 0) l = 0;
+int maxSubArray(vector<int>& nums){
+    int localSum = 0, globalSum = INT_MIN;
+    for(int num: nums){
+        localSum += num;
+        globalSum = max(globalSum, localSum);
+
+        if(localSum < 0) localSum = 0;
     }
-    
-    return max(s,l);
+    return globalSum;
 }
 
 int main(){
@@ -25,6 +24,6 @@ int main(){
   for(int i = 0; i< n; i++){
     cin>>arr[i];
   }
-  cout<<maxSubarraySum(arr, n)<<endl;
+  cout<<maxSubArray(arr)<<endl;
   return 0;
 }
